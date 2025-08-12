@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peripheral Neuropathy Relief Clinic</title>
+  <style>
+    /* Global styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    /* Navigation bar */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+    nav .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 5%;
+    }
+    nav .logo {
+      font-weight: bold;
+      color: #2a73d9;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav ul li a:hover {
+      color: #2a73d9;
+    }
+
+    /* Hero section */
+    header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('neuron.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 5%;
+    }
+    header .hero-content {
+      max-width: 600px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+    .btn {
+      background-color: #2a73d9;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s ease-in-out;
+    }
+    .btn:hover {
+      background-color: #214e8a;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 5%;
+    }
+    section:nth-child(even) {
+      background: #f9f9f9;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+      color: #2a73d9;
+    }
+
+    /* Treatments grid */
+    .treatments {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .treatment-card {
+      flex: 1 1 calc(50% - 20px);
+      margin: 10px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .treatment-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .treatment-card h3 {
+      margin: 20px;
+      color: #2a73d9;
+    }
+    .treatment-card p {
+      margin: 0 20px 20px 20px;
+      flex: 1;
+    }
+
+    /* About section */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .about .about-image {
+      flex: 0 0 300px;
+    }
+    .about .about-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    .about .about-text {
+      flex: 1;
+      padding-left: 40px;
+    }
+
+    /* Registration */
+    .registration {
+      background: #f0f7ff;
+      border-top: 4px solid #2a73d9;
+    }
+    .registration iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+
+    /* Footer */
+    .footer {
+      background: #2a73d9;
+      color: white;
+      padding: 40px 5%;
+      text-align: center;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .treatments .treatment-card {
+        flex: 1 1 100%;
+      }
+      header h1 {
+        font-size: 2.2em;
+      }
+      .about .about-text {
+        padding-left: 0;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="logo">Integrative Health Solutions</a>
+      <ul>
+        <li><a href="#treatments">Treatments</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="hero-content">
+      <h1>Peripheral Neuropathy Relief</h1>
+      <p>Discover safe, non‑invasive and effective treatments that get you back to living.</p>
+      <a href="#register" class="btn">Register &amp; Pay Now</a>
+    </div>
+  </header>
+
+  <!-- Treatments Section -->
+  <section id="treatments">
+    <h2 class="section-title">Our Comprehensive Treatments</h2>
+    <div class="treatments">
+      <div class="treatment-card">
+        <img src="ChiropracticCare.png" alt="Chiropractic Care">
+        <h3>Gentle Chiropractic Care</h3>
+        <p>Restore joint mobility and nerve function through gentle adjustments. Our experienced chiropractors use precise techniques to relieve pressure, improve circulation and support nerve healing. Experience relief without medications or surgery.</p>
+      </div>
+      <div class="treatment-card">
+        <img src="LLLT.png" alt="Low Level Laser Therapy">
+        <h3>Low‑Level Laser Therapy</h3>
+        <p>Non‑invasive light therapy stimulates cellular repair and reduces inflammation. Sessions are painless and last only minutes. Laser therapy improves blood flow and nerve function, delivering significant relief from neuropathic pain.</p>
+      </div>
+      <div class="treatment-card">
+        <img src="VibrationWaves.png" alt="Vibration Therapy">
+        <h3>Vibration Therapy</h3>
+        <p>Oscillatory vibrations activate mechanoreceptors to improve circulation, proprioception and muscle strength. Vibration therapy is drug‑free and enhances nerve signals to alleviate pain and numbness while boosting balance and mobility.</p>
+      </div>
+      <div class="treatment-card">
+        <img src="FruitsandSupplements.png" alt="Nutrition &amp; Detox">
+        <h3>Nutrition &amp; Detoxification</h3>
+        <p>Correct nutritional deficiencies and detoxify heavy metals to support nerve regeneration. We personalize your plan with B‑vitamins, antioxidants, safe detox protocols and lifestyle counseling to address root causes of neuropathy.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About Our Clinic</h2>
+    <div class="about">
+      <div class="about-image">
+        <img src="Oldenkamp.png" alt="Clinic Professional">
+      </div>
+      <div class="about-text">
+        <h3>Dedicated to Your Well‑Being</h3>
+        <p>Our team, led by Dr. Derek Oldenkamp, specializes in integrative neuropathy care. We combine evidence‑based therapies with compassionate guidance to help you regain comfort and independence. From your first consultation, you'll feel supported and informed about every step of the process.</p>
+        <p>With years of experience and cutting‑edge technology, we’re committed to delivering results you can feel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="register" class="registration">
+    <h2 class="section-title">Secure Registration &amp; Payment</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">Ready to start your path to relief? Use our secure online form to schedule your initial evaluation and complete your payment. It’s fast, easy and protected.</p>
+    <!-- JotForm embed: replace YOUR_FORM_ID with your actual JotForm form ID -->
+    <iframe src="https://form.jotform.com/252226304636048" allowfullscreen></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Integrative Health Solutions. All rights reserved.</p>
+    <p>505 W Palmetto St, Florence, SC 29501 | (843) 799-0001 | ihsflorencesc@gmail.com</p>
+  </footer>
+</body>
+</html>
